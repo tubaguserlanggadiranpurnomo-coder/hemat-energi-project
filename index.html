@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EnergiKita — Kampanye Hemat Energi Sekolah</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container">
+      <button class="logo" data-tujuan="beranda">Energi<span class="logo-titik">Kita</span></button>
+
+      <button class="nav-toggle" aria-label="Buka menu navigasi">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu">
+        <li><button data-tujuan="beranda">Beranda</button></li>
+        <li><button data-tujuan="tentang">Tentang</button></li>
+        <!-- Class 'segera' dihapus, diganti dengan data-tujuan -->
+        <li><button data-tujuan="data-fakta">Data &amp; Fakta</button></li>
+        <li><button data-tujuan="aksi-rekomendasi">Aksi &amp; Rekomendasi</button></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ======================= HALAMAN: BERANDA ======================= -->
+  <div id="halaman-beranda" class="halaman">
+    <section class="hero">
+      <div class="container">
+        <div class="hero-teks">
+          <p class="hero-eyebrow">Kampanye Hemat Energi Sekolah</p>
+          <h1>Matikan yang Tak Perlu,<br />Selamatkan Energi Kita.</h1>
+          <p class="hero-tagline">
+            EnergiKita adalah ajakan buat seluruh warga sekolah — siswa, guru,
+            dan staf — untuk lebih peduli dan bijak memakai listrik, mulai
+            dari kebiasaan paling sederhana.
+          </p>
+          <div class="hero-tombol">
+            <button class="btn btn-utama" data-tujuan="tentang">Kenapa Ini Penting?</button>
+            <button class="btn btn-garis" data-tujuan="data-fakta">Lihat Faktanya</button>
+          </div>
+        </div>
+
+        <div class="hero-ilustrasi">
+          <svg viewBox="0 0 240 240" width="280" height="280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustrasi matahari dan bola lampu hemat energi">
+            <circle cx="120" cy="100" r="55" fill="#ffc145" />
+            <g stroke="#ffc145" stroke-width="6" stroke-linecap="round">
+              <line x1="120" y1="10" x2="120" y2="30" />
+              <line x1="120" y1="170" x2="120" y2="190" />
+              <line x1="30" y1="100" x2="10" y2="100" />
+              <line x1="45" y1="35" x2="30" y2="20" />
+              <line x1="195" y1="35" x2="210" y2="20" />
+            </g>
+            <path d="M100 150 h40 v20 a20 20 0 0 1 -40 0 z" fill="#d8f3dc" />
+            <rect x="112" y="190" width="16" height="10" rx="2" fill="#1b4332" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="latar-belakang">
+      <div class="container">
+        <div class="section-judul">
+          <h2>Kenapa Kampanye Ini Ada?</h2>
+          <p>Pemborosan energi sering terjadi tanpa disadari — dan dampaknya lebih besar dari yang kita kira.</p>
+        </div>
+
+        <div class="dua-kolom">
+          <div class="kartu-fakta">
+            <h3>Kebiasaan Kecil, Dampak Besar</h3>
+            <p>
+              Lampu yang menyala di ruang kosong, AC yang terus hidup saat
+              ruangan sudah sepi, charger yang tetap tertancap — hal-hal
+              kecil seperti ini terlihat sepele, tapi kalau terjadi setiap
+              hari di seluruh sekolah, jumlah energi yang terbuang jadi
+              <strong>tidak sedikit</strong>.
+            </p>
+          </div>
+          <div class="kartu-fakta">
+            <h3>Bukan Cuma Soal Listrik</h3>
+            <p>
+              Energi listrik yang kita pakai sebagian besar masih berasal
+              dari sumber yang terbatas. Semakin boros kita memakainya,
+              semakin besar juga tekanan terhadap lingkungan. Hemat energi
+              berarti ikut menjaga bumi untuk jangka panjang.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="background-color: var(--hijau-muda);">
+      <div class="container">
+        <div class="section-judul">
+          <h2>Apa yang Ingin Kami Capai?</h2>
+          <p>Tiga hal ini yang jadi fokus kampanye EnergiKita di lingkungan sekolah.</p>
+        </div>
+
+        <div class="grid-tujuan">
+          <div class="kartu-tujuan">
+            <svg class="ikon" viewBox="0 0 24 24" fill="none" stroke="#1b4332" stroke-width="1.8"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.6 10.8c.6.45 1.1 1.2 1.1 1.95V16h5v-.25c0-.75.5-1.5 1.1-1.95A6 6 0 0 0 12 3Z"/></svg>
+            <h3>Menumbuhkan Kesadaran</h3>
+            <p>Membuat warga sekolah lebih peka terhadap kebiasaan boros energi di sekitarnya.</p>
+          </div>
+          <div class="kartu-tujuan">
+            <svg class="ikon" viewBox="0 0 24 24" fill="none" stroke="#1b4332" stroke-width="1.8"><path d="M4 12a8 8 0 1 0 16 0 8 8 0 0 0-16 0Z"/><path d="M12 8v4l3 2"/></svg>
+            <h3>Membangun Kebiasaan Baru</h3>
+            <p>Mendorong langkah hemat energi jadi kebiasaan sehari-hari, bukan cuma imbauan sesaat.</p>
+          </div>
+          <div class="kartu-tujuan">
+            <svg class="ikon" viewBox="0 0 24 24" fill="none" stroke="#1b4332" stroke-width="1.8"><path d="M3 3v18h18"/><path d="M7 15l4-5 3 3 5-7"/></svg>
+            <h3>Berbasis Bukti Nyata</h3>
+            <p>Setiap ajakan didukung data dari angket &amp; observasi sekolah — bukan sekadar imbauan umum.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="teaser">
+      <div class="container">
+        <div class="teaser-kotak">
+          <h2>Sudah Siap Membawa Perubahan?</h2>
+          <p>
+            Cari tahu langkah-langkah praktis apa saja yang bisa kamu lakukan mulai hari ini di sekolah untuk menghemat energi.
+          </p>
+          <button class="btn btn-utama" data-tujuan="aksi-rekomendasi">Lihat Rekomendasi Aksi</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ======================= HALAMAN: TENTANG ======================= -->
+  <div id="halaman-tentang" class="halaman">
+    <section class="halaman-hero">
+      <div class="container">
+        <h1>Cerita di Balik EnergiKita</h1>
+        <p>Kenapa kampanye ini dibuat, dan apa yang ingin dicapai.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container cerita">
+        <h2>Kenapa Kampanye Ini Dibuat?</h2>
+        <p>
+          Selama ini, banyak kebiasaan boros energi di lingkungan sekolah
+          yang terjadi begitu saja tanpa disadari — lampu ruang kelas yang
+          tetap menyala saat jam istirahat, kipas angin yang dibiarkan
+          berputar di ruangan kosong, atau charger yang lupa dicabut.
+        </p>
+        <p>
+          EnergiKita lahir dari keinginan untuk mengubah kebiasaan itu,
+          bukan lewat teguran atau aturan, tapi lewat ajakan yang membuat
+          orang <em>mau</em> berubah karena paham alasannya. Kampanye ini
+          adalah kelanjutan dari kegiatan lintas mata pelajaran (PABP, KIK,
+          PP, MTK, Bahasa Indonesia, dan ESD).
+        </p>
+      </div>
+    </section>
+
+    <section class="identitas">
+      <div class="container">
+        <div class="section-judul">
+          <h2>Identitas Pembuat</h2>
+        </div>
+        <div class="kartu-identitas">
+          <dl>
+            <dt>Nama Kelompok</dt>
+            <dd>Kelompok 2 Produktif<span class="catatan-isi"></span></dd>
+            <dt>Rombel</dt>
+            <dd>PPLG XI-4 <span class="catatan-isi"></span></dd>
+            <dt>Mata Pelajaran</dt>
+            <dd>ESD (Education for Sustainable Development)</dd>
+            <dt>Anggota</dt>
+            <dd>Tubagus Erlangga<br>
+                Hazel Anthony<br>
+                Ahmad Gerry <span class="catatan-isi"></span></dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ======================= HALAMAN: DATA & FAKTA ======================= -->
+  <div id="halaman-data-fakta" class="halaman">
+    <section class="halaman-hero">
+      <div class="container">
+        <h1>Data &amp; Fakta Kebiasaan Energi</h1>
+        <p>Bukti nyata hasil kuesioner komprehensif perilaku hemat energi 636 siswa kelas XI lintas jurusan.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <!-- Kotak Informasi Metadata Survei -->
+        <div class="meta-info-box">
+          <div class="meta-info-item">
+            <strong>📋 Sumber Data:</strong> Kuesioner Perilaku Hemat Energi Siswa Kelas XI (Google Form)
+          </div>
+          <div class="meta-info-item">
+            <strong>🎯 Skala Penilaian:</strong> Skala Likert 1–4 (1 = Sangat Jarang, 4 = Selalu/Sangat Sering)
+          </div>
+          <div class="meta-info-item">
+            <strong>🔒 Privasi &amp; Validitas:</strong> Data diagregasi anonim, 636 responden valid (99,4% partisipasi)
+          </div>
+        </div>
+
+        <!-- Ringkasan Statistik Utama (Stat Cards) -->
+        <div class="section-judul">
+          <h2>Ringkasan Hasil Analisis Data</h2>
+          <p>Olah data agregat kuesioner memberikan gambaran jelas mengenai kondisi dan budaya hemat energi di sekolah.</p>
+        </div>
+
+        <div class="stat-grid">
+          <div class="stat-card">
+            <span class="stat-angka" id="stat-responden">636</span>
+            <span class="stat-label">Total Responden</span>
+            <p class="stat-deskripsi">Partisipasi 99,4% mencakup perwakilan merata dari seluruh 7 program keahlian kelas XI.</p>
+          </div>
+          <div class="stat-card">
+            <span class="stat-angka" id="stat-skor">3.36 <small style="font-size: 1.1rem; color: var(--teks-muted);">/ 4.00</small></span>
+            <span class="stat-label">Rata-Rata Skor Total</span>
+            <p class="stat-deskripsi">Berada di kategori <strong>Sangat Baik</strong> (rentang 3.26 - 4.00) secara keseluruhan.</p>
+          </div>
+          <div class="stat-card">
+            <span class="stat-angka" id="stat-positif">90.8%</span>
+            <span class="stat-label">Perilaku Positif</span>
+            <p class="stat-deskripsi">Rata-rata frekuensi respons siswa menjawab pada kategori "Sering" atau "Selalu".</p>
+          </div>
+          <div class="stat-card">
+            <span class="stat-angka" id="stat-tertinggi">3.51</span>
+            <span class="stat-label">Skor Tertinggi (P01)</span>
+            <p class="stat-deskripsi">Kesadaran harian hemat energi menjadi tindakan yang paling konsisten diterapkan.</p>
+          </div>
+        </div>
+
+        <!-- Visualisasi Grafik Interaktif dengan Chart.js -->
+        <div class="section-judul">
+          <h2>Visualisasi Data Interaktif (Chart.js)</h2>
+          <p>Data berikut dibaca langsung dari file JSON kuesioner dan divisualisasikan dalam bentuk grafik interaktif.</p>
+        </div>
+
+        <div class="grafik-grid">
+          <!-- Grafik 1: Rata-Rata Skor per Butir Indikator -->
+          <div class="chart-card">
+            <div class="chart-header">
+              <h3>Grafik 1: Rata-Rata Skor per Butir Indikator (Skala 1.00 – 4.00)</h3>
+              <p>Perbandingan tingkat kepedulian siswa pada 10 aspek perilaku hemat energi di sekolah.</p>
+            </div>
+            <div class="chart-wrapper chart-wrapper-tinggi">
+              <canvas id="grafikButir"></canvas>
+            </div>
+            <div class="grafik-penjelas">
+              <p>💡 <strong>Kalimat Penjelas:</strong> Kesadaran mempraktikkan hemat energi (P01: 3.51) dan mencabut steker/charger (P06: 3.45) tergolong sangat tinggi, namun pembatasan gawai/laptop (P04: 3.22) serta keberanian menegur rekan sebaya (P09: 3.22) masih menjadi skor terendah yang membutuhkan intervensi kampanye.</p>
+            </div>
+          </div>
+
+          <!-- Dua Kolom: Grafik 2 (Kategori) & Grafik 3 (Jurusan) -->
+          <div class="grafik-grid-dua">
+            <!-- Grafik 2: Donut Chart Kategori -->
+            <div class="chart-card">
+              <div class="chart-header">
+                <h3>Grafik 2: Proporsi Kategori Perilaku Siswa</h3>
+                <p>Distribusi persentase klasifikasi kategori perilaku hemat energi.</p>
+              </div>
+              <div class="chart-wrapper chart-wrapper-lingkaran">
+                <canvas id="grafikKategori"></canvas>
+              </div>
+              <div class="grafik-penjelas">
+                <p>💡 <strong>Kalimat Penjelas:</strong> Sebanyak 96,2% siswa berada pada kategori Sangat Baik (59,4%) dan Baik (36,8%), menunjukkan modal kepedulian lingkungan yang kuat pada angkatan kelas XI.</p>
+              </div>
+            </div>
+
+            <!-- Grafik 3: Bar Chart Jurusan -->
+            <div class="chart-card">
+              <div class="chart-header">
+                <h3>Grafik 3: Rata-Rata Skor per Program Keahlian</h3>
+                <p>Perbandingan skor perilaku hemat energi di 7 jurusan kelas XI.</p>
+              </div>
+              <div class="chart-wrapper">
+                <canvas id="grafikJurusan"></canvas>
+              </div>
+              <div class="grafik-penjelas">
+                <p>💡 <strong>Kalimat Penjelas:</strong> Jurusan PMN memimpin dengan rata-rata tertinggi (3.51), sementara jurusan berbasis komputer seperti PPLG dan MPLB (3.24) memerlukan pembiasaan khusus mematikan peralatan digital saat jeda kerja.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Grafik 4: Stacked Bar Chart Distribusi Jawaban per Butir -->
+          <div class="chart-card">
+            <div class="chart-header">
+              <h3>Grafik 4: Distribusi Frekuensi Jawaban per Butir (%)</h3>
+              <p>Sebaran persentase jawaban: Selalu (4), Sering (3), Jarang (2), dan Sangat Jarang (1).</p>
+            </div>
+            <div class="chart-wrapper chart-wrapper-tinggi">
+              <canvas id="grafikDistribusi"></canvas>
+            </div>
+            <div class="grafik-penjelas">
+              <p>💡 <strong>Kalimat Penjelas:</strong> Rata-rata 90,8% jawaban siswa terkonsentrasi pada opsi 'Sering' dan 'Selalu', mengonfirmasi bahwa pemborosan energi yang terjadi umumnya dipicu oleh lupa sesaat, bukan karena kebiasaan sengaja.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Temuan Menarik & Kesimpulan Observasi -->
+    <section style="background-color: var(--kuning-muda);">
+      <div class="container">
+        <div class="section-judul">
+          <h2>Temuan Menarik &amp; Kesimpulan Analisis</h2>
+          <p>Fakta-fakta penting dari data yang menjadi dasar kuat rekomendasi aksi kampanye kami.</p>
+        </div>
+
+        <div class="fakta-highlight-grid">
+          <div class="fakta-highlight-card">
+            <h4>🔌 Kebiasaan Charger Sudah Baik</h4>
+            <p>Sebanyak <strong>91,9% siswa</strong> terbiasa mencabut steker/charger setelah digunakan, menunjukkan edukasi stopkontak sudah melekat erat.</p>
+          </div>
+          <div class="fakta-highlight-card">
+            <h4>💻 Laptop Sering Terbiarkan Menyala</h4>
+            <p>Sebanyak <strong>13,7% siswa</strong> masih jarang membatasi pemakaian gawai/laptop saat tidak dibutuhkan, menjadikannya peluang penghematan terbesar di lab sekolah.</p>
+          </div>
+          <div class="fakta-highlight-card">
+            <h4>🤝 Perlu Keberanian Saling Mengingatkan</h4>
+            <p>Skor terendah ada pada inisiatif menegur teman (3.22), membuktikan perlunya figur <em>Ranger Energi</em> agar siswa tidak merasa sungkan saling mengingatkan.</p>
+          </div>
+          <div class="fakta-highlight-card">
+            <h4>🏫 Jurusan PPLG Siap Memimpin</h4>
+            <p>Dengan 176 siswa (responden terbanyak), siswa jurusan PPLG memiliki potensi pengaruh terbesar untuk menciptakan standar efisiensi energi di laboratorium komputer.</p>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2.5rem;">
+          <button class="btn btn-utama" data-tujuan="aksi-rekomendasi">Lihat Rekomendasi Aksi Nyata Berdasarkan Data</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ======================= HALAMAN: AKSI & REKOMENDASI ======================= -->
+  <div id="halaman-aksi-rekomendasi" class="halaman">
+    <section class="halaman-hero" style="background-color: var(--kuning-matahari); border-bottom-color: var(--hijau-tua);">
+      <div class="container">
+        <h1 style="color: var(--hijau-tua);">Mulai dari Langkah Kecil</h1>
+        <p style="color: var(--hijau-tua);">Rekomendasi tindakan nyata yang bisa kita lakukan bersama.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-judul">
+          <h2>Panduan Aksi Warga Sekolah</h2>
+          <p>Setiap dari kita memiliki peran. Pilih tindakan yang paling sesuai dengan aktivitasmu sehari-hari.</p>
+        </div>
+
+        <div class="grid-tujuan">
+          <!-- Aksi Siswa -->
+          <div class="kartu-tujuan aksi-kartu">
+            <div class="aksi-label">Untuk Siswa</div>
+            <h3>Di Ruang Kelas</h3>
+            <ul>
+              <li>Matikan lampu dan kipas/AC saat seluruh kelas pergi ke lapangan olahraga atau lab.</li>
+              <li>Cabut charger HP atau laptop dari stopkontak jika baterai sudah penuh atau tidak digunakan.</li>
+              <li>Buka tirai jendela di pagi/siang hari untuk memanfaatkan cahaya matahari alami.</li>
+            </ul>
+          </div>
+
+          <!-- Aksi Guru -->
+          <div class="kartu-tujuan aksi-kartu" style="background-color: var(--putih);">
+            <div class="aksi-label" style="background-color: var(--hijau-daun);">Untuk Guru & Staf</div>
+            <h3>Manajemen Ruangan</h3>
+            <ul>
+              <li>Matikan LCD Proyektor segera setelah jam pelajaran atau presentasi selesai.</li>
+              <li>Atur suhu AC pada standar sejuk (24°C - 25°C), tidak perlu terlalu dingin hingga 16°C.</li>
+              <li>Matikan komputer ruang guru/tata usaha saat jam pulang sekolah.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="identitas">
+      <div class="container">
+        <div class="teaser-kotak" style="transform: rotate(-1deg); text-align: center; max-width: 800px; margin: 0 auto; background-color: var(--hijau-muda); color: var(--hijau-tua); border-color: var(--hijau-tua);">
+          <h2 style="color: var(--hijau-tua);">Jadilah "Ranger Energi" di Kelasmu!</h2>
+          <p style="color: var(--hijau-tua);">
+            Kami merekomendasikan setiap kelas menunjuk 1-2 orang sebagai penanggung jawab kelistrikan (Ranger Energi) yang bertugas memastikan semua alat elektronik mati sebelum ruang kelas dikunci.
+          </p>
+          <button class="btn btn-utama" style="margin-top: 1rem;" data-tujuan="beranda">Kembali ke Beranda</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 EnergiKita — Kampanye Konservasi &amp; Hemat Energi.</p>
+      <p>Proyek ESD (Education for Sustainable Development) · Fase 2: Data & Aksi</p>
+    </div>
+  </footer>
+
+  <!-- CDN Chart.js (Fase 2: Tanpa Instalasi) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Data Fallback Kuesioner (Menjamin grafik tetap muncul jika file dibuka langsung via file://) -->
+  <script src="data-perilaku-energi.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
